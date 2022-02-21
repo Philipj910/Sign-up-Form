@@ -1,0 +1,102 @@
+ html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: HamsterFont;
+    word-spacing: 4px;
+}
+
+@font-face {
+    font-family: HamsterFont;
+    src: url(Exo-VariableFont_wght.ttf);
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("pic.jpg");
+    background-position: center;
+    background-size: cover;
+    min-width: 35%;
+}
+
+.logoSidebar {
+    display: flex;
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: rgba(0,0,0, .3);
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 5rem;
+    height: 5rem;
+}
+
+#form-container {
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#topHalf {
+    padding: 2rem 0 5rem 0;
+    font-size: 30px;
+    padding: 5%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.575);
+    padding: 5%;
+    gap: 20px;
+    height: auto;
+    border: outset;
+}
+
+.sign-ups {
+    gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inner-signup {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomHalf {
+    background-color: wheat;
+    padding: 5%;
+}
+
+.signupBtn {
+    padding: 1rem 2rem 1rem 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    
+}
+
+.sign-ups:invalid {
+    background-color: pink;
+}
+
+#password {
+    border: 1px solid red;
+}
+
+.error {
+    font-size: 12px;
+    color: red;
+}

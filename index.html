@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logoSidebar"><img id="logo" src="clipart54554.png" alt="odin">Project Houdini</div>
+    </div>
+    <div id="form-container">
+        <div id="topHalf">
+            <p>Hello, and welcome to Houdini's sign up form webpage! To stay up to date with the latest news regarding Houdini, please fill out the form below with your information.</p>
+            <p>you <em>know</em> you want to.</p>
+        </div>
+            <form action="action_page.php" method="post">
+                <div class="container">
+                    <h1>Sign up</h1>
+                    <div class="sign-ups">
+                        <div class="inner-signup"><label for="firstName">First Name:</label>
+                        <input type="text" id="firstName"></div>
+                        <div class="inner-signup"><label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName"></div>
+                        <div class="inner-signup"><label for="email">Email*:</label>
+                        <input type="email" id="email"required></div>
+                        <div class="inner-signup"><label for="phoneNumber">Phone Number:</label>
+                        <input type="tel" id="phoneNumber"></div>
+                        <div class="inner-signup"><label for="password">Password*:</label>
+                        <input type="password" id="password" required>
+                        <div class="error">*Passwords do not match</div></div>
+                        <div class="inner-signup"><label for="confirmPassword">Confirm Password*:</label>
+                        <input type="password" id="password" required></div>
+                    </div>  
+                </div>
+                <div class="bottomHalf">
+                    <button type="submit" class="signupBtn">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+        </div>
+</body>
+</html>
